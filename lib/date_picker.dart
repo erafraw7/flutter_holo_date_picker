@@ -115,12 +115,14 @@ class DatePicker {
           Navigator.pop(context, _selectedDate);
         },
       ),
-      TextButton(
-        style: TextButton.styleFrom(primary: textColor),
-        child: Text(cancelText ?? "Cancel"),
-        onPressed: () {
-          Navigator.pop(context);
-        },
+      Container(margin: EdgeInsets.only(right: 4),
+        child: TextButton(
+          style: TextButton.styleFrom(primary: textColor),
+          child: Text(cancelText ?? "Cancel"),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
       )
     ];
 
